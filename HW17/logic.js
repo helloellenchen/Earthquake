@@ -38,11 +38,16 @@ function createFeatures(earthquakeData) {
 function createMap(earthquakes) {
 
   // Define map layers
-  var satelliteMap = L.tileLayer("https://api.mapbox.com/styles/v1/ruchichandra/cjakahzysbllh2rl87e2dg27b/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicnVjaGljaGFuZHJhIiwiYSI6ImNqYzJ2dXlvcDA2a2gycW4zb2RkOXpmZjgifQ.EABSXTlj3gpJcvk8zJL2DQ");
+  
+  var satelliteMap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?" + 
+    "access_token=pk.eyJ1IjoidHNlcmluMTgiLCJhIjoiY2poeG5oYnE3MGRwMzNwbWgydGV0dXNrNCJ9.DwxEEgXLIA54vMrZYuWuhw");  
 
-  var outdoorMap = L.tileLayer("https://api.mapbox.com/styles/v1/ruchichandra/cjc2vqswz0efp2rpfjnhunj68/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicnVjaGljaGFuZHJhIiwiYSI6ImNqYzJ2dXlvcDA2a2gycW4zb2RkOXpmZjgifQ.EABSXTlj3gpJcvk8zJL2DQ");
+  var outdoorMap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/outdoors-v10/tiles/256/{z}/{x}/{y}?" +
+     "access_token=pk.eyJ1IjoidHNlcmluMTgiLCJhIjoiY2poeG5oYnE3MGRwMzNwbWgydGV0dXNrNCJ9.DwxEEgXLIA54vMrZYuWuhw");
+  
+  var lightMap = L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/256/{z}/{x}/{y}?" +
+     "access_token=pk.eyJ1IjoidHNlcmluMTgiLCJhIjoiY2poeG5oYnE3MGRwMzNwbWgydGV0dXNrNCJ9.DwxEEgXLIA54vMrZYuWuhw")
 
-  var lightMap = L.tileLayer("https://api.mapbox.com/styles/v1/ruchichandra/cjc2wvic01j3l2rpbfsypf8qk/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoicnVjaGljaGFuZHJhIiwiYSI6ImNqYzJ2dXlvcDA2a2gycW4zb2RkOXpmZjgifQ.EABSXTlj3gpJcvk8zJL2DQ");
 
   
 
